@@ -53,7 +53,7 @@ export default function GalleryPreview() {
               alt=""
             />
             <img
-              className="hidden md:block h-auto object-cover object-center max-w-full rounded-lg"
+              className="hidden md:block h-auto object-cover object-center max-w-fit rounded-lg"
               src={Img4}
               alt=""
             />
