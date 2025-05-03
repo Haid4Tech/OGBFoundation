@@ -1,8 +1,8 @@
-import LandingPage from "./app/home/page";
+import LandingPage from "./app/routes/home";
 
 function App() {
   return (
-    <div>
+    <div className="font-lato">
       <LandingPage />
     </div>
   );

@@ -1,10 +1,10 @@
 import { navItems, iconsList } from "../../common/data";
 import { Link } from "react-router";
-import Icon from "../../../public/OGlogo.png";
+import Icon from "../../assets/OGlogo.png";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col gap-5 mx-5 md:mx-28">
+    <div className="flex flex-col gap-5 mx-5 md:mx-28 py-18">
       <div className="border-y border-gray-300 py-12">
         <div className="flex flex-col gap-5 items-center justify-center">
           <div className="flex flex-row gap-4 items-center">

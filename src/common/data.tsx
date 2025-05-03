@@ -1,6 +1,6 @@
 import { INavItems, IiconsList } from "./types";
 import {
-  FaFacebookF,
+  // FaFacebookF,
   FaInstagram,
   FaWhatsapp,
   FaTwitter,
