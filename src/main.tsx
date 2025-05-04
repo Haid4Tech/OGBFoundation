@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { GridLoader } from "react-spinners";
 import App from "./App.tsx";
+import EventScreen from "./app/routes/events.tsx";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router";
@@ -14,7 +15,7 @@ const routes = [
   },
   {
     path: "/events",
-    element: <div>Events</div>,
+    element: <EventScreen />,
     loader: GridLoader,
   },
   {

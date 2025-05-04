@@ -4,7 +4,9 @@ import HeroBG from "../../../assets/landing/hero-bg.png";
 export default function Hero() {
   return (
     <div>
-      <Navbar />
+      <div className="absolute top-0 w-full z-50 p-4">
+        <Navbar colortheme={"light"} />
+      </div>
       <div className="relative min-h-screen h-screen w-full overflow-hidden">
         <div
           className="absolute inset-0 bg-gray-900 bg-cover bg-top bg-no-repeat brightness-50"
