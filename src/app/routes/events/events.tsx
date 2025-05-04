@@ -11,6 +11,7 @@ import EventCalendar from "@/components/events/event-calandar";
 
 const events = [
   {
+    id: 234,
     date: "28",
     day: "Friday",
     monthYear: "March 2025",
@@ -21,6 +22,7 @@ const events = [
     time: "11:00 AM – 2:00 PM",
   },
   {
+    id: 20034,
     date: "22",
     day: "Saturday",
     monthYear: "February 2025",
@@ -31,6 +33,7 @@ const events = [
     time: "11:00 AM – 1:00 PM",
   },
   {
+    id: 3909,
     date: "7",
     day: "Friday",
     monthYear: "February 2025",
@@ -65,11 +68,12 @@ export default function EventScreen() {
         <Button>Get notified on future events</Button>
       </div>
 
-      <div className="flex flex-col gap-2 py-8 px-12">
+      <div className="flex flex-col gap-2 py-8 px-5 md:px-12">
         <div className="flex flex-row gap-3 items-center w-full">
           <ToggleTabs selected={toggle} onSelect={setToggle} />
           <SelectComp
             placeholder={"View Options"}
+            showIdentifier
             items={[...Object.values(EventTimeline)]}
             selected={timeline}
             onSelect={(item) => setTimeline(item as EventTimeline)}

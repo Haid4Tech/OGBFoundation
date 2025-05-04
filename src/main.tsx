@@ -1,8 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { GridLoader } from "react-spinners";
+import EventScreen from "./app/routes/events/events.tsx";
 import App from "./App.tsx";
-import EventScreen from "./app/routes/events.tsx";
 import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router";

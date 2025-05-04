@@ -7,19 +7,17 @@ const ToggleTabs: FC<{
   onSelect: (option: EventToogleItem) => void;
   selected: EventToogleItem;
 }> = ({ onSelect, selected }) => {
-  console.log(selected);
-
   return (
     <div className="flex flex-row gap-1 bg-gray-100 p-1 w-fit rounded-sm">
       <button
         onClick={() => onSelect(EventToogleItem.LIST)}
         className={cn(
-          "cursor-pointer hover:bg-white rounded-sm py-1 px-4 flex flex-row items-center gap-1",
+          "cursor-pointer hover:bg-white rounded-sm py-[0.2px] px-4 flex flex-row items-center gap-1",
           selected === EventToogleItem.LIST ? "bg-white" : ""
         )}
       >
         <List size={16} />
-        <p className="text-sm">List</p>
+        <p className="text-xs">List</p>
       </button>
       <button
         onClick={() => onSelect(EventToogleItem.CALENDAR)}
@@ -29,7 +27,7 @@ const ToggleTabs: FC<{
         )}
       >
         <CalendarDays size={16} />
-        <p className="text-sm">Calendar</p>
+        <p className="text-xs">Calendar</p>
       </button>
     </div>
   );

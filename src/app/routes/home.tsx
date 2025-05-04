@@ -9,7 +9,7 @@ import TributePreview from "@/components/landing-page/tribute/tribute-preview";
 
 export default function LandingPage() {
   return (
-    <div>
+    <div className="flex flex-col gap-5">
       <Hero />
       <InMemory />
       <DonateBanner />
