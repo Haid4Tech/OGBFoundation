@@ -42,7 +42,7 @@ const SelectComp: FC<ISelectComp> = ({
         >
           {showIdentifier && <p className={"text-sm font-light"}>show:</p>}
 
-          <SelectValue placeholder={placeholder} />
+          <SelectValue className={"text-sm"} placeholder={placeholder} />
         </SelectTrigger>
         <SelectContent>
           {itemsWIcons && itemsWIcons.length === 0 ? (
