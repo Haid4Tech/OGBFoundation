@@ -8,6 +8,16 @@ import { EventToogleItem, EventTimeline } from "@/common/enums";
 import SelectComp from "@/components/reusables/select-item";
 import Footer from "@/components/navigation/footer";
 import EventCalendar from "@/components/events/event-calandar";
+import { List, CalendarDays } from "lucide-react";
+
+const eventToggleItems = [
+  { label: "List", item: EventToogleItem.LIST, Icon: <List size={16} /> },
+  {
+    label: "Calendar",
+    item: EventToogleItem.CALENDAR,
+    Icon: <CalendarDays size={16} />,
+  },
+];
 
 const events = [
   {
@@ -57,7 +67,7 @@ export default function EventScreen() {
           Be a part of the foundation’s effort to reach out to the ones who need
           us the most
         </p>
-        <p className="uppercase font-bold text-3xl">
+        <p className="uppercase font-bold text-lg md:text-2xl lg:text-3xl">
           JOIn us In making a difference: explore our events
         </p>
         <p className="w-full md:max-w-lg lg:max-w-3xl">
@@ -70,10 +80,14 @@ export default function EventScreen() {
 
       <div className="flex flex-col gap-2 py-8 px-5 md:px-12">
         <div className="flex flex-row gap-3 items-center w-full">
-          <ToggleTabs selected={toggle} onSelect={setToggle} />
+          <ToggleTabs
+            toggleItems={eventToggleItems}
+            selected={toggle}
+            onSelect={(item) => setToggle(item as EventToogleItem)}
+          />
           <SelectComp
             placeholder={"View Options"}
-            showIdentifier
+            identifier="Show"
             items={[...Object.values(EventTimeline)]}
             selected={timeline}
             onSelect={(item) => setTimeline(item as EventTimeline)}

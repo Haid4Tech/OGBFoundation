@@ -113,3 +113,42 @@
 .scrollbar-width {
   scrollbar-width: thin;
 }
+
+.image-grid-wrapper {
+  position: relative;
+  overflow: hidden;
+  user-select: none;
+  --x-offset: -40px;
+  --y-offset: -40px;
+}
+
+.image-grid-wrapper::before,
+.image-grid-wrapper::after {
+  content: "";
+  background-color: #fff;
+  height: 120px;
+  position: absolute;
+  border-radius: 70%;
+}
+
+.image-grid-wrapper::before {
+  inset: var(--y-offset) var(--x-offset) 0;
+}
+
+.image-grid-wrapper::after {
+  inset: 0 var(--x-offset) var(--y-offset);
+  top: unset;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  overflow-x: scroll;
+}
+
+.image-grid img {
+  height: 400px;
+  object-position: center;
+  object-fit: cover;
+}

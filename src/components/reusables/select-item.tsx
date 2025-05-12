@@ -21,7 +21,7 @@ interface ISelectComp {
   onSelect: Dispatch<SetStateAction<string | undefined>>;
   items?: string[];
   itemsWIcons?: selectItems[];
-  showIdentifier?: boolean;
+  identifier?: string;
 }
 
 const SelectComp: FC<ISelectComp> = ({
@@ -29,7 +29,7 @@ const SelectComp: FC<ISelectComp> = ({
   items,
   selected,
   onSelect,
-  showIdentifier,
+  identifier,
   itemsWIcons,
 }) => {
   return (
@@ -40,7 +40,7 @@ const SelectComp: FC<ISelectComp> = ({
             "w-full min-w-30 border-1 border-gray-300 cursor-pointer rounded-sm capitalize"
           }
         >
-          {showIdentifier && <p className={"text-sm font-light"}>show:</p>}
+          {identifier && <p className={"text-sm font-light"}>{identifier}:</p>}
 
           <SelectValue className={"text-sm"} placeholder={placeholder} />
         </SelectTrigger>

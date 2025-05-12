@@ -2,6 +2,10 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { GridLoader } from "react-spinners";
 import EventScreen from "./app/routes/events/events.tsx";
+import StoriesScreen from "./app/routes/stories/stories.tsx";
+import GalleryScreen from "./app/routes/gallery/gallery.tsx";
+import TimelineScreen from "./app/routes/timeline/timeline.tsx";
+import ContributeScreen from "./app/routes/contribute/contribute.tsx";
 import App from "./App.tsx";
 import "./index.css";
 
@@ -20,22 +24,22 @@ const routes = [
   },
   {
     path: "/gallery",
-    element: <div>Gallery</div>,
+    element: <GalleryScreen />,
     loader: GridLoader,
   },
   {
     path: "/stories",
-    element: <div>Stories</div>,
+    element: <StoriesScreen />,
     loader: GridLoader,
   },
   {
     path: "/timeline",
-    element: <div>Timeline</div>,
+    element: <TimelineScreen />,
     loader: GridLoader,
   },
   {
     path: "/contribute",
-    element: <div>Contribute</div>,
+    element: <ContributeScreen />,
     loader: GridLoader,
   },
 ];

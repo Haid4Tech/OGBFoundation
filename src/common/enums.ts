@@ -3,7 +3,24 @@ export enum EventToogleItem {
   CALENDAR = "Calendar",
 }
 
+export enum ToggleImages {
+  YEARS = "Years",
+  MONTHS = "Months",
+  RECENTLYADDED = "Recently Added",
+}
+
 export enum EventTimeline {
   PAST = "Past",
   UPCOMING = "Upcoming",
+}
+
+export enum GallerySortOptions {
+  RECENTLYADDED = "Recently Added",
+  DATE = "Date Taken",
+}
+
+export enum GalleryFilterOptions {
+  ALL = "All Media",
+  PHOTOS = "Photos",
+  VIDEOS = "Videos",
 }
