@@ -3,6 +3,7 @@ import { navItems } from "@/common/data";
 import { Link } from "react-router";
 import { cn } from "@/lib/utils";
 import Icon from "../../assets/OG_logo.png";
+import NavBarMobile from "./mobile-nav";
 
 interface INavBar {
   colortheme: "light" | "dark";
@@ -17,19 +18,24 @@ const Navbar: FC<INavBar> = ({ colortheme }) => {
             <img src={Icon} alt="" className="w-10 h-10" />
           </Link>
         </div>
-        <div className="hidden md:flex space-x-8">
-          {navItems.map((item, index) => (
-            <NavLink key={index} href={item.link} colortheme={colortheme}>
-              {item.label}
-            </NavLink>
-          ))}
+        <div>
+          <div className="hidden md:flex space-x-8">
+            {navItems.map((item, index) => (
+              <NavLink key={index} href={item.link} colortheme={colortheme}>
+                {item.label}
+              </NavLink>
+            ))}
+          </div>
+          <div className={"block md:hidden"}>
+            <NavBarMobile colortheme={colortheme} />
+          </div>
         </div>
       </div>
     </nav>
   );
 };
 
-const NavLink = ({
+export const NavLink = ({
   href,
   colortheme,
   children,

@@ -1,8 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { GridLoader } from "react-spinners";
 import EventScreen from "./app/routes/events/events.tsx";
 import StoriesScreen from "./app/routes/stories/stories.tsx";
+import DynamicStory from "./app/routes/stories/stories.id.tsx";
 import GalleryScreen from "./app/routes/gallery/gallery.tsx";
 import TimelineScreen from "./app/routes/timeline/timeline.tsx";
 import ContributeScreen from "./app/routes/contribute/contribute.tsx";
@@ -14,37 +14,35 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 const routes = [
   {
     path: "/",
-    element: <App />,
-    loader: GridLoader,
+    Component: App,
   },
   {
     path: "/events",
-    element: <EventScreen />,
-    loader: GridLoader,
+    Component: EventScreen,
   },
   {
     path: "/gallery",
-    element: <GalleryScreen />,
-    loader: GridLoader,
+    Component: GalleryScreen,
   },
   {
     path: "/stories",
-    element: <StoriesScreen />,
-    loader: GridLoader,
+    Component: StoriesScreen,
+  },
+  {
+    path: "/stories/:storiesId",
+    Component: DynamicStory,
   },
   {
     path: "/timeline",
-    element: <TimelineScreen />,
-    loader: GridLoader,
+    Component: TimelineScreen,
   },
   {
     path: "/contribute",
-    element: <ContributeScreen />,
-    loader: GridLoader,
+    Component: ContributeScreen,
   },
 ];
 
-let router = createBrowserRouter(routes);
+const router = createBrowserRouter(routes);
 
 const root = document.getElementById("root");
 

@@ -2,14 +2,17 @@ import { useState } from "react";
 import Navbar from "@/components/navigation/menubar";
 import Footer from "@/components/navigation/footer";
 import ToggleTabs from "@/components/reusables/toggle";
-import {
-  ToggleImages,
-  GallerySortOptions,
-  GalleryFilterOptions,
-} from "@/common/enums";
+import { ToggleImages, MediaType } from "@/common/enums";
 import SelectComp from "@/components/reusables/select-item";
-import { gallerySortOptions, galleryFilterOptions } from "@/common/data";
+import {
+  galleryFilterOptions,
+  GalleryListLeft,
+  GalleryListRight,
+} from "@/common/data";
 import { ImageList } from "@/common/data";
+import GalleryMasonry from "@/components/gallery/masonry";
+import YearsGallery from "@/components/gallery/galleryYears";
+import MonthsGallery from "@/components/gallery/galleryMonth";
 // import { Button } from "@/components/ui/button";
 // import { ImagePlus } from "lucide-react";
 
@@ -32,24 +35,19 @@ export default function GalleryScreen() {
   const [toggleImage, setToggleImage] = useState<ToggleImages>(
     ToggleImages.YEARS
   );
-  const [sort, setSort] = useState<GallerySortOptions>(
-    GallerySortOptions.RECENTLYADDED
-  );
-  const [filter, setFilter] = useState<GalleryFilterOptions>(
-    GalleryFilterOptions.ALL
-  );
-
-  console.log("Sort ", sort);
-  console.log("Toggle ", toggleImage);
+  // const [sort, setSort] = useState<GallerySortOptions>(
+  //   GallerySortOptions.RECENTLYADDED
+  // );
+  const [filter, setFilter] = useState<MediaType>(MediaType.ALL);
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 scroll-container">
       <div>
         <div className="flex flex-col gap-8 p-4">
           <Navbar colortheme={"dark"} />
           <div className={"flex flex-row items-center justify-center"}>
             <div className="flex flex-col gap-2 text-center w-full md:max-w-lg lg:max-w-4xl">
-              <p className={"font-semibold"}>
+              <p className={"text-sm md:text-base font-semibold text-primary"}>
                 Mary-Comfort: A Life Celebrated Through Media and Stories
               </p>
               <p
@@ -66,7 +64,7 @@ export default function GalleryScreen() {
         <div className="image-grid-wrapper">
           <div className="image-grid">
             {ImageList.map((item, index) => (
-              <div key={index}>
+              <div className={"even:hidden md:even:block"} key={index}>
                 <img src={item.Image} alt={item.alt} />
               </div>
             ))}
@@ -74,8 +72,12 @@ export default function GalleryScreen() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-3 px-12">
-        <div className={"flex flex-row items-center justify-between"}>
+      <div className="flex flex-col gap-5 px-5 md:px-12">
+        <div
+          className={
+            "flex flex-col gap-5 md:flex-row items-center justify-between"
+          }
+        >
           <ToggleTabs
             toggleItems={toggleOptions}
             selected={toggleImage as ToggleImages}
@@ -83,19 +85,19 @@ export default function GalleryScreen() {
           />
 
           <div className="flex flex-row items-center gap-3">
-            <SelectComp
+            {/* <SelectComp
               placeholder={"View Options"}
               identifier={"Sort"}
               itemsWIcons={gallerySortOptions}
               selected={sort}
               onSelect={(item) => setSort(item as GallerySortOptions)}
-            />
+            /> */}
             <SelectComp
               placeholder={"View Options"}
               identifier={"Filter"}
               itemsWIcons={galleryFilterOptions}
               selected={filter}
-              onSelect={(item) => setFilter(item as GalleryFilterOptions)}
+              onSelect={(item) => setFilter(item as MediaType)}
             />
 
             {/* V2 */}
@@ -106,100 +108,11 @@ export default function GalleryScreen() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="grid gap-4">
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
-                alt=""
-              />
-            </div>
-            <div>
-              <img
-                className="h-auto max-w-full rounded-lg"
-                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
+        {toggleImage === ToggleImages.RECENTLYADDED && (
+          <GalleryMasonry right={GalleryListRight} left={GalleryListLeft} />
+        )}
+        {toggleImage === ToggleImages.YEARS && <YearsGallery />}
+        {toggleImage === ToggleImages.MONTHS && <MonthsGallery />}
       </div>
 
       <Footer />

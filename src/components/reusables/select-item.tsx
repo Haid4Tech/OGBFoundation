@@ -37,7 +37,7 @@ const SelectComp: FC<ISelectComp> = ({
       <Select value={selected} onValueChange={onSelect}>
         <SelectTrigger
           className={
-            "w-full min-w-30 border-1 border-gray-300 cursor-pointer rounded-sm capitalize"
+            "w-full border-1 border-gray-300 cursor-pointer rounded-sm capitalize"
           }
         >
           {identifier && <p className={"text-sm font-light"}>{identifier}:</p>}

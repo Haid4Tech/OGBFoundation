@@ -21,7 +21,9 @@ export default function DonateBanner() {
               who need it the most and to spread the warmth and love that we
               once shared with Ogbenyi.
             </p>
-            <Button type="submit">Donate Now</Button>
+            <Button className={"w-fit"} type="submit">
+              Donate Now
+            </Button>
           </div>
         </div>
       </div>

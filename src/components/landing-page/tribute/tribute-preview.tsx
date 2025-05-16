@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import TributeItem from "./tribute-item";
 import { Button } from "@/components/ui/button";
-import Cover from "@/assets/images/IMG_0339.png";
+import Cover from "@/assets/images/2023/ogb_a_home_w_family.jpg";
 import Profile from "../../../assets/profile.jpg";
 
 export default function TributePreview() {
@@ -30,13 +30,14 @@ export default function TributePreview() {
 
       <div
         className={cn(
-          "flex flex-row gap-5 md:gap-8 overflow-x-auto scrollbar-width snap-x snap-proximity"
+          "flex flex-row gap-4 md:gap-4 overflow-x-auto scrollbar-width snap-x snap-proximity"
         )}
       >
         {[...tribute, ...tribute, ...tribute, ...tribute].map(
           ({ cover, title, description, profile }, index) => {
             return (
               <TributeItem
+                className={"min-w-fit md:min-w-[25rem]"}
                 key={index}
                 cover={cover}
                 title={title}

@@ -19,7 +19,7 @@ export enum GallerySortOptions {
   DATE = "Date Taken",
 }
 
-export enum GalleryFilterOptions {
+export enum MediaType {
   ALL = "All Media",
   PHOTOS = "Photos",
   VIDEOS = "Videos",
