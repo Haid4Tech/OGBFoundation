@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import LabeledInput from "@/components/reusables/input-comp";
 import { Button } from "@/components/ui/button";
 
@@ -18,6 +18,10 @@ export const DonateEvent = () => {
   const [steps, setSteps] = useState<number>(0);
   const [donateInput, setDonateInput] =
     useState<IDonateInputProps>(donateInputValues);
+
+  useEffect(() => {
+    setSteps(0);
+  }, []);
 
   return (
     <div className="flex flex-col gap-3">

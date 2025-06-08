@@ -86,7 +86,10 @@ export default function TributeItem({
           <div className="flex flex-row gap-2 my-auto">
             <ProfileCover
               img={profile.profile}
-              name={profile.fullName}
+              user={{
+                firstname: profile.fullName.split(" ")[0],
+                lastname: profile.fullName.split(" ").slice(1).join(" "),
+              }}
               alt={`${profile.fullName} cover image`}
             />
             <div>

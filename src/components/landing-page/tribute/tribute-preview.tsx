@@ -8,6 +8,7 @@ export default function TributePreview() {
   const tribute = [
     {
       cover: Cover,
+      link: "/",
       title: "Introduction: A Mission of Compassion",
       description:
         "On a sunny Saturday morning, a group of volunteers gathered with one shared goal: to bring joy and support to those in need. Our destination was the Hope Haven Orphanage, a place that houses children who have faced unimaginable challenges in their young lives Alongside this visit, we also organised a charity event to distribute essential supplies to ...",
@@ -34,7 +35,7 @@ export default function TributePreview() {
         )}
       >
         {[...tribute, ...tribute, ...tribute, ...tribute].map(
-          ({ cover, title, description, profile }, index) => {
+          ({ cover, title, description, profile, link }, index) => {
             return (
               <TributeItem
                 className={"min-w-fit md:min-w-[25rem]"}
@@ -43,6 +44,7 @@ export default function TributePreview() {
                 title={title}
                 description={description}
                 profile={profile}
+                link={link}
               />
             );
           }
