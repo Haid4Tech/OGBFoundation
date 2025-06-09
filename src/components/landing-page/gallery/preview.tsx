@@ -10,6 +10,8 @@ import Img9 from "@/assets/images/2020/ogb-w-gang.jpg";
 import Img10 from "@/assets/images/2023/Ogb n hpt staff.png";
 import Img11 from "@/assets/images/2022/Ogb bday w family 1.png";
 
+import { useNavigate } from "react-router";
+
 const rightImage = [
   {
     id: 1,
@@ -85,11 +87,12 @@ const leftImage = [
 ];
 
 export default function GalleryPreview() {
+  const navigate = useNavigate();
   return (
-    <div className={"flex flex-col gap-5 px-12 py-8"}>
+    <div className={"flex flex-col gap-5 px-5 md:px-12 py-8"}>
       <div className="flex flex-row items-center justify-between">
-        <p className="uppercase font-bold text-2xl">Gallery</p>
-        <Button>See more</Button>
+        <p className="uppercase font-bold text-xl md:text-2xl">Gallery</p>
+        <Button onClick={() => navigate("/gallery")}>See more</Button>
       </div>
 
       <div>

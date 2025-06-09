@@ -18,7 +18,7 @@ export default function Forms() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-        <div className="flex flex-row gap-3">
+        <div className="flex flex-col md:flex-row gap-5">
           <LabeledInput
             items={{
               id: "firstname",

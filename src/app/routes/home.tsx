@@ -5,7 +5,7 @@ import DonateBanner from "@/components/landing-page/banners/donate-banner";
 import Hero from "@/components/landing-page/hero/hero";
 import GalleryPreview from "@/components/landing-page/gallery/preview";
 // import EventPreview from "@/components/landing-page/events/event-preview";
-import TributePreview from "@/components/landing-page/tribute/tribute-preview";
+// import TributePreview from "@/components/landing-page/tribute/tribute-preview";
 
 export default function LandingPage() {
   return (
@@ -14,7 +14,7 @@ export default function LandingPage() {
       <InMemory />
       <DonateBanner />
       {/* <EventPreview /> */}
-      <TributePreview />
+      {/* <TributePreview /> */}
       <GalleryPreview />
       <ContactUs />
       <Footer />

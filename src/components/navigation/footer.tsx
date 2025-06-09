@@ -27,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row items-center justify-between">
+      <div className="flex flex-col gap-5 md:flex-row items-center justify-between">
         <p className="text-xs md:text-sm text-neutral-400">
           2025 OMAA Foundation. All rights reserved.
         </p>

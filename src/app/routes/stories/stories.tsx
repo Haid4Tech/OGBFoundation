@@ -33,7 +33,7 @@ const tribute = [
 export default function StoriesScreen() {
   return (
     <div className="flex flex-col gap-8 p-4">
-      <Navbar colortheme={"dark"} />
+      <Navbar colortheme={"light"} />
       <div className={"flex flex-row items-center justify-center"}>
         <div className="flex flex-col gap-2 text-center w-full md:max-w-lg lg:max-w-4xl">
           <p className={"text-sm md:text-base font-semibold text-primary"}>

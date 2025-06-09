@@ -15,7 +15,7 @@ const Navbar: FC<INavBar> = ({ colortheme }) => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex-shrink-0">
           <Link to="/" className="text-white text-2xl font-bold">
-            <img src={Icon} alt="" className="w-10 h-10" />
+            <img src={Icon} alt="" className="w-12 h-12" />
           </Link>
         </div>
         <div>
@@ -49,9 +49,9 @@ export const NavLink = ({
       to={href}
       className={cn(
         "transition-colors uppercase font-medium text-sm tracking-widest text-center px-2 pb-2",
-        colortheme === "light"
-          ? "text-white hover:text-gray-300"
-          : "text-black hover:border-b hover:border-black"
+        colortheme === "light" && "text-black hover:text-gray-300",
+        colortheme === "dark" &&
+          "text-black md:text-white hover:border-b hover:border-white"
       )}
     >
       {children}

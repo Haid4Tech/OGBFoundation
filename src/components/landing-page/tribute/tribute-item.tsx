@@ -43,7 +43,7 @@ export default function TributeItem({
       <div className={cn("")}>
         <img
           className={
-            "object-cover object-center rounded-sm min-w-[300px] h-full"
+            "object-cover object-center rounded-sm min-w-[300px] md:h-full h-96"
           }
           src={cover}
           alt="tribute cover"

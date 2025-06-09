@@ -34,13 +34,9 @@ export interface ImageMasonryProp {
   gallery: Array<ImageProp>;
 }
 
-export interface StoryProp {
-  id: number;
-  title: string;
-  cover: string;
-  tagline?: string;
-  coverAlt?: string;
-  readTime: string;
+interface ImageDataProp {
+  image?: string | undefined;
+  alt?: string;
   profile?: {
     cover?: string | undefined;
     alt?: string;
@@ -50,55 +46,48 @@ export interface StoryProp {
       lastname?: string;
     };
   };
+  date?: string | Date;
+  source?: string;
+  link?: string;
+}
+
+interface ISections {
+  topic?: string;
+  body?: string[];
+  list?: string[];
+}
+
+interface QuoteProp {
+  text: string;
+  source: string;
+  name: string;
+}
+
+interface ProfileProp {
+  cover?: string | undefined;
+  alt?: string;
+  email?: string;
+  user?: {
+    firstname?: string;
+    lastname?: string;
+  };
+}
+
+export interface StoryProp {
+  id: number;
+  title: string;
+  cover: string;
+  tagline?: string;
+  coverAlt?: string;
+  readTime: string;
+  profile?: ProfileProp;
   introduction?: string[];
-  imageAfterIntro?: {
-    image?: string | undefined;
-    alt?: string;
-    profile?: {
-      cover?: string | undefined;
-      alt?: string;
-      email?: string;
-      user?: {
-        firstname?: string;
-        lastname?: string;
-      };
-    };
-    date?: string | Date;
-    source?: string;
-    link?: string;
-  };
-  quote?: {
-    text: string;
-    source: string;
-    name: string;
-  };
+  imageAfterIntro?: ImageDataProp | null;
+  quote?: QuoteProp | null;
   body: string[];
-  section1: {
-    topic?: string;
-    body?: string[];
-    list?: string[];
-  };
-  section2?: {
-    topic?: string;
-    body?: string[];
-    list?: string[];
-  };
-  imageAfterBody?: {
-    image: string | undefined;
-    alt?: string;
-    profile: {
-      cover?: string | undefined;
-      alt?: string;
-      user?: {
-        firstname?: string;
-        lastname?: string;
-      };
-      email?: string;
-    };
-    date?: string | Date;
-    source?: string;
-    link?: string;
-  };
-  finalbody?: string[];
+  section1: ISections | null;
+  section2?: ISections | null;
+  imageAfterBody?: ImageDataProp | null;
+  finalbody?: string[] | null;
   conclusion: string[];
 }

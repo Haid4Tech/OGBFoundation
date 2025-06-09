@@ -4,7 +4,7 @@ import ContactImg from "@/assets/landing/contact-img.png";
 export default function ContactUs() {
   return (
     <div
-      className="grid grid-cols-2 gap-5 p-12 bg-cover bg-center"
+      className="grid md:grid-cols-2 gap-5 px-5 md:px-12 py-12 bg-cover bg-center"
       style={{ backgroundImage: `url(${ContactImg})` }}
     >
       <div className="flex flex-col gap-5 py-8">

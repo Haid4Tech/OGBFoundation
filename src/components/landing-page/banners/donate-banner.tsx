@@ -6,7 +6,7 @@ export default function DonateBanner() {
     <div className="relative min-h-[30rem] w-full overflow-hidden">
       <div
         className={
-          "grid lg:grid-cols-2 items-center px-12 p-8 bg-cover bg-center h-[30rem]"
+          "grid lg:grid-cols-2 items-center px-5 md:px-12 p-8 bg-cover bg-center h-[30rem]"
         }
         style={{ backgroundImage: `url(${BannerImg})` }}
       >

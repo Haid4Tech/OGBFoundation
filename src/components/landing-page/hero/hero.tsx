@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div>
       <div className="absolute top-0 w-full z-50 p-4">
-        <Navbar colortheme={"light"} />
+        <Navbar colortheme={"dark"} />
       </div>
       <div className="relative min-h-screen h-screen w-full overflow-hidden">
         <div

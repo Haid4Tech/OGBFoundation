@@ -4,7 +4,10 @@ import { Button } from "@/components/ui/button";
 import Cover from "@/assets/images/2023/ogb_a_home_w_family.jpg";
 import Profile from "../../../assets/profile.jpg";
 
+import { useNavigate } from "react-router";
+
 export default function TributePreview() {
+  const navigate = useNavigate();
   const tribute = [
     {
       cover: Cover,
@@ -21,12 +24,16 @@ export default function TributePreview() {
     },
   ];
   return (
-    <div className={cn("flex flex-col gap-5 px-12 py-8")}>
-      <div className={cn("flex flex-row items-center justify-between")}>
-        <p className={cn("uppercase font-bold text-2xl")}>
+    <div className={cn("flex flex-col gap-5 px-5 md:px-12 py-8")}>
+      <div
+        className={cn(
+          "flex flex-row items-center md:items-start justify-between"
+        )}
+      >
+        <p className={cn("uppercase font-bold text-xl md:text-2xl")}>
           ogbenyi’s tribute messages
         </p>
-        <Button>See More</Button>
+        <Button onClick={() => navigate("/stories")}>See More</Button>
       </div>
 
       <div

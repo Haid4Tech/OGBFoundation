@@ -1,97 +1,162 @@
-import Cover from "@/assets/images/2022/ogb_nonso_kells.png";
-
 export const stories = [
   {
     id: 1,
-    title: "Ogenyi's last birthday with the girls",
-    cover: Cover,
-    tagline: "That cake was delicious",
-    coverAlt: "Kelechi, Nonso and OGB on her Birthday",
+    title: "Prom Night With MC",
+    cover: "/story/nonso_story_cover.jpg",
+    tagline:
+      "I told myself “As long as this babe keeps holding my hand throughout this night, I’m going to have a good time",
+    coverAlt: "Nonso and OGB Prom night",
     profile: {
-      cover: undefined,
-      alt: "",
+      cover: "/story/nonso_profile.jpg",
+      alt: "nonso",
       user: {
-        firstname: "Laura",
-        lastname: "Henson",
+        firstname: "Chinonso",
+        lastname: "Ata",
       },
-      email: "kes@gmail.com",
+      email: "",
     },
     introduction: [
-      "Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit sit. Tellus aliquam enim urna, etiam. Mauris posuere vulputate arcu amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id.",
+      "For Prom night, back in 2017, my prom date, as we used to say back then “Judased” me and left me “prom date-less” so I was consigned to attend prom alone and honestly, I was taking this pretty well. I had prepared to sit on my assigned table, by myself, while all the girls around me on my table had some guy by their side.",
 
-      "Eget quis mi enim, leo lacinia pharetra, semper. Eget in volutpat mollis at volutpat lectus velit, sed auctor. Porttitor fames arcu quis fusce augue enim. Quis at habitant diam at. Suscipit tristique risus, at donec. In turpis vel et quam imperdiet. Ipsum molestie aliquet sodales id est ac volutpat. ",
+      "I wore a long red dress that my mum and I had traversed the entire Wuse market to find because for some reason, it’s so hard to find an outfit for a skinny girl of my size in this city. I had my hair done the previous day, and in hindsight this was a bad idea because I’m tender headed and I need at least 3 days after making a new hairstyle for my neck to start working properly from the pain of making my hair.",
     ],
-    imageAfterIntro: {
-      image:
-        "https://plus.unsplash.com/premium_photo-1747290111576-07d2f5034ae1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8",
-      alt: "",
-      profile: {
-        cover: undefined,
-        alt: "",
-        user: {
-          firstname: "Laura",
-          lastname: "Henson",
-        },
-        email: "kes@gmail.com",
-      },
-      date: "2023-05-12",
-      source: "Unsplash",
-      link: "unsplash.com",
-    },
-    quote: {
-      text: "In a world older and more complete than ours they move finished and complete, gifted with extensions of the senses we have lost or never attained, living by voices we shall never hear.",
-      name: "Kelechi Onyebryna",
-      source: "A big Head",
-    },
+    imageAfterIntro: null,
+    quote: null,
     body: [
-      "Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada fringilla",
-      "Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim dignissim adipiscing faucibus consequat, urna. Viverra purus et erat auctor aliquam. Risus, volutpat vulputate posuere purus sit congue convallis aliquet. Arcu id augue ut feugiat donec porttitor neque. Mauris, neque ultricies eu vestibulum, bibendum quam lorem id. Dolor lacus, eget nunc lectus in tellus, pharetra, porttitor.",
-      "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus. Quis velit eget ut tortor tellus. Sed vel, congue felis elit erat nam nibh orci.",
+      "I had done my makeup myself at my dear friend, Joan’s, house and back then I was really good at doing my own makeup and even doing other people’s makeup, can’t say much about now though. If you ever see me outside today with my face beat, please know that it was not the work of my hands, for I have lost all traces of the skill over time. All this to say that I was determined to enjoy my prom, date-less as I was.",
+      "All these wishes and dreams of having a nice time were dashed when I arrived at the Ladi Kwali Hall in Sheraton Hotel and I saw everyone coupled up, smiling and taking pictures with their dates.",
+      "I remember skipping pictures outside of the hall and just entering straight into our hall where we were going to have the prom, I wanted to find a seat where I could just stow myself away and pretend to have a nice time by myself.",
+      "I never got the chance because immediately I entered the hall, Mary-Comfort saw me and made a beeline in my direction and grabbed my arm and immediately pulled me back outside. It’s funny now that I think about it, how aggressive she was. I don’t even think I had properly entered the hall.",
+      "She asked me “Do you have a prom date” and I said “No” and then she said “Good”, to which I made an incredulous face because one thing this girl could do is laugh in the face of my downfall lmao. Anyhoo, come to find out that she was in the same boat as me because her prom date was a no-show. She then declared that I was to be her prom date and it didn’t even seem like I had a choice in the matter. ",
+      "I remember telling her that she better not think of leaving my side that night and she didn’t. All my hopes and dreams of having a good night had automatically returned and I told myself “As long as this babe keeps holding my hand throughout this night, I’m going to have a good time”. That’s actually a lie, that’s not exactly what I said (I mean, this was like 8 years ago and I don’t really remember) but I bet I said something close to that.",
+      "I remember us skipping across the hall, saying hi to everyone. Mind you, we were both wearing high heels. We took a lot of pictures, sat side by side on the same table, laughed together, ate together, screamed during the performances and danced together.",
     ],
-    section1: {
-      topic: "Software and tools",
-      body: [
-        "Pharetra morbi libero id aliquam elit massa integer tellus. Quis felis aliquam ullamcorper porttitor. Pulvinar ullamcorper sit dictumst ut eget a, elementum eu. Maecenas est morbi mattis id in ac pellentesque ac.",
-      ],
-    },
-    section2: {
-      topic: "Other resources",
-      body: [
-        "Sagittis et eu at elementum, quis in. Proin praesent volutpat egestas sociis sit lorem nunc nunc sit. Eget diam curabitur mi ac. Auctor rutrum lacus malesuada massa ornare et. Vulputate consectetur ac ultrices at diam dui eget fringilla tincidunt. Arcu sit dignissim massa erat cursus vulputate gravida id. Sed quis auctor vulputate hac elementum gravida cursus dis.",
-      ],
-      list: [
-        "Lectus id duis vitae porttitor enim gravida morbi.",
-        "Eu turpis posuere semper feugiat volutpat elit, ultrices suspendisse. Auctor vel in vitae placerat.",
-        "Suspendisse maecenas ac donec scelerisque diam sed est duis purus.",
-      ],
-    },
+    section1: null,
+    section2: null,
     readTime: "5 mins",
-    imageAfterBody: {
-      image:
-        "https://images.unsplash.com/photo-1746817066768-c395734a1430?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "",
-      profile: {
-        cover: undefined,
-        alt: "",
-        user: {
-          firstname: "Leon",
-          lastname: "Thompson",
-        },
-        email: "kes@gmail.com",
-      },
-      date: new Date(),
-      source: "Unsplash",
-      link: "unsplash.com",
-    },
-    finalbody: [
-      "Lectus leo massa amet posuere. Malesuada mattis non convallis quisque. Libero sit et imperdiet bibendum quisque dictum vestibulum in non. Pretium ultricies tempor non est diam. Enim ut enim amet amet integer cursus. Sit ac commodo pretium sed etiam turpis suspendisse at",
-      "Tristique odio senectus nam posuere ornare leo metus, ultricies. Blandit duis ultricies vulputate morbi feugiat cras placerat elit. Aliquam tellus lorem sed ac. Montes, sed mattis pellentesque suscipit accumsan. Cursus viverra aenean magna risus elementum faucibus molestie pellentesque. Arcu ultricies sed mauris vestibulum",
-    ],
+    imageAfterBody: null,
+    finalbody: null,
     conclusion: [
-      "Morbi sed imperdiet in ipsum, adipiscing elit dui lectus. Tellus id scelerisque est ultricies ultricies. Duis est sit sed leo nisl, blandit elit sagittis. Quisque tristique consequat quam sed. Nisl at scelerisque amet nulla purus habitasse.",
-      "Nunc sed faucibus bibendum feugiat sed interdum. Ipsum egestas condimentum mi massa. In tincidunt pharetra consectetur sed duis facilisis metus. Etiam egestas in nec sed et. Quis lobortis at sit dictum eget nibh tortor commodo cursus.",
-      "Odio felis sagittis, morbi feugiat tortor vitae feugiat fusce aliquet. Nam elementum urna nisi aliquet erat dolor enim. Ornare id morbi eget ipsum. Aliquam senectus neque ut id eget consectetur dictum. Donec posuere pharetra odio consequat scelerisque et, nunc tortor.",
-      "Nulla adipiscing erat a erat. Condimentum lorem posuere gravida enim posuere cursus diam.",
+      "It was a good night and I had such a nice time and I bet she did too.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Moments with Ogbenyi",
+    cover: "/story/rahma_story_cover.jpg",
+    tagline: "It's all about My Girl!!!",
+    coverAlt: "Nonso and OGB Prom night",
+    profile: {
+      cover: "/story/rahma_profile.jpg",
+      alt: "Rahma",
+      user: {
+        firstname: "Rahma",
+        lastname: "Olaniyan",
+      },
+      email: "",
+    },
+    introduction: [
+      "One of my most vivid memories of school was meeting Comfort. And here's the thing, there's nobody else I remember meeting so clearly like her. Because, when I met Comfort, she had the biggest smile, and was so cheery! It was the second day of school and I genuinely wondered why anyone was excited to be here because I really was sore about coming to school😂.",
+    ],
+    imageAfterIntro: null,
+    quote: null,
+    body: [
+      "She waved & said `Hi! I'm Mary-Comfort`. I didn't get her name because it was the first time I'd heard it & so I asked her to say it again. She did, I introduced myself, and that was just it. That was how we clicked. We did everything, from then on, together.",
+      "And, I think that what really really bugs me is, I keep circling back to that time, wondering, if I'd seen her death, how would it have been to know, in that moment, that this was how she was going to leave? That we wouldn't do the rest of life together? That all our plans wouldn't be lived out?",
+      "All those times when I'd speak on my friendship with Comfort and talk about how she was literally my `day 2` in uni. The second friend I made. How could I have, in those moments, thinking about how we met, ever imagined that this is how she'd leave?",
+      "And it feels so surreal to think about it now, my sweet, sweet, kind to a fault, strong girl. It's so hard because there are hardly any major memories where you're not in it with me. I'd never imagined I'd be here and you'd be gone? Gosh. There are hardly any memories where you're not there. Oh God. ",
+      "Comfort was someone you could genuinely say was the kindest person and mean it wholeheartedly. She was there for everyone. She would show up for everyone. Even if it meant splitting herself up; she just never would disappoint anyone. ",
+      "And there were times, when as friends, we'd genuinely ask Comfort why she had to help everyone even when it wasn't convenient for her and that she should learn to say no to some things sometimes. But, it's in these kinds of moments that you realize that every little kindness really pays because, there's no one that knew her, & heard this news, that didn't talk about how kind she was. And that's really just wholesome. ",
+      "Comfort would walk into a room and it would light up. That was just how she was. She had the largest smile ever. She laughed with all of her face. She really really was such a cheery person. If you needed help, she'd be there. No matter how tired she was. Comfort would find a middle ground for you. My God. Comfort would show up for you! Comfort would help you when everyone else would be too lazy or groggy to do something, Comfort would be the one to do it for you. God. ",
+      "And she was in so much pain. But you would never know. She was such a strong girl. She was doing all this and would still reassure us. She'd still find a way to make a joke out of the situations. She, gosh, she was such a strong girl. All that pain but she'd be there. She would smile. She would laugh. She would show up still. She really was such an Angel. She was the sweetest person, fr. She was so so kind. She was so so smart. She was such a beautiful human. I really miss her. I really miss her. Gosh. My sweet girl.",
+    ],
+    section1: null,
+    section2: null,
+    readTime: "6.67 mins",
+    imageAfterBody: null,
+    finalbody: null,
+    conclusion: [
+      "In all this, I think what really hurts is that we didn't get to have that last group phone call. I wish more than anything that we didn't postpone that call omg. Because that call would have been our last but we never got to have it. It hurts me so much. It hurts me so much that we didn't take that call seriously. I really wish I could go back. And make a different decision in that moment. Because I really regret that we didn't have that last group call.",
+      "I really hope that my sweet girl is resting now. I cannot believe I'm typing this, because this was not the plan. It wasn't supposed to be this short. She really deserved all of the world. I really hope that she's resting. Because she really deserves it. She fought so hard, she really deserves to rest. She didn't deserve what she went through. She was such a sweet person, it was a blessing to have her in my life. She really was the best of all of us. She was such an Angel. And I hope that she's found rest. She really deserves it.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Still Reaching for You",
+    cover: "/story/kels_story_cover.jpg",
+    tagline:
+      "For every quiet prayer, unspoken word, and shared laugh — I still carry you.",
+    coverAlt: "Kels and OGB",
+    profile: {
+      cover: "/story/kels_profile.jpg",
+      alt: "Kels",
+      user: {
+        firstname: "Kelechi",
+        lastname: "Nwokoagbara",
+      },
+      email: "",
+    },
+    introduction: [
+      "I used to bounce back and forth a lot with my prayer life when we were in school. It had started to feel like a chore, like a performance my heart just wasn’t in. And for some reason, I didn’t feel like I could talk to anyone about it, except Ogbenyi. One time (I think in SS2?), I’d asked what she was doing after a function, and she said she was going to the chapel. We got there, and she just sat with her journal, quiet for a while, writing for a bit, then we left.",
+    ],
+    imageAfterIntro: null,
+    quote: null,
+    body: [
+      "I can’t remember the exact conversation that followed, but I know I told her how conflicted I’d been feeling. And though I can’t recall exactly what she said to me that day, I know she created a new space in our friendship; one that protected both of our relationships with God.",
+
+      "Ogbenyi became that constant for me, and I’d like to think I did the same for her. From then on, until 2023, we were the person each other reached out to when things felt off or uncertain, whether with God or just with life in general. And when she didn’t have the words, even when she felt the same way and neither of us knew what direction to take, it was just comforting to not feel alone with those thoughts",
+
+      "If I wanted to write out stories about Ogbenyi, I could talk about the only time I ever saw her truly pissed off, her eyes red but somehow still laughing through her anger; or some hilarious interaction she had with food, because there were so many. But when I sat down to write today, this is what came to mind.",
+    ],
+    section1: null,
+    section2: null,
+    readTime: "3.5 mins",
+    imageAfterBody: null,
+    finalbody: null,
+    conclusion: [
+      "To be fair, I think about it often, the fact that I don’t have her to do this with anymore. Habitually, I still pick up my phone to send a “guy how far, can we talk about something” or a “have you ever felt like…” text before I remember our reality. I miss her perspective. I miss having that space with her, to be heard without saying a lot, to know how she’s feeling about something before she speaks and vice versa. I miss listening to her try to rationalize both our bad behaviors sometimes, or laughing at something uncouth I did or said. God, I miss laughing with Ogbenyi, she was such a funny babe without even trying, and she laughed at EVERYTHING.",
+    ],
+  },
+  {
+    id: 4,
+    title: "all love with ogbenyi",
+    cover: "/story/praise_story_cover.jpg",
+    tagline: "Angels don’t die, they just take a break.",
+    coverAlt: "Praise and OGB",
+    profile: {
+      cover: "/story/praise_comfort.jpg",
+      alt: "Kels",
+      user: {
+        firstname: "Praise",
+        lastname: "Yakubu",
+      },
+      email: "",
+    },
+    introduction: [
+      "Comfort, I called you comfort for a while till I heard something that sound like ogbeni in a song and stared calling you ogbeni. You said its not the same thing, but that one really no concern me and you always answered.",
+
+      "When I think about you it’s always fun, laughter, and joy I see my love. Your parents named you comfort for a reason and your life showed the reason why, I remember first semester in AUN, I remember, when mommy bought so much provision for you, I remembered when, she said it for you and praise you guys should eat and concentrate on your book. 😂 I remember forming humble and just taking one parallel G Biscuit and saying I was okay. Then you stood up from your bed went to the cupboard and carried 2 biscuits and threw it at me, and you said better eat, it for 2 of us not just me. We were less than 1 week been roommates and you and mummy showed me so much love already.",
+    ],
+    imageAfterIntro: null,
+    quote: null,
+    body: [
+      "January 2020, when we first resumed, I was down, and you were my comforter. Just so I could feel better. you took me to AK and we got our nails done 😂, Your bed became my safe place, you will come back and see me on your bed and just tap me to shift 😂 sometimes I won’t answer you and then you will shout Praise Yakubu, then I will move",
+
+      "January 2021, you got back from your first treatment, instead of me to take care of you, comfort you still looked after me, always getting my meals from Big Vic without me asking, I will just see notification your food is on my bedhead 😂 You carried so much love in you and I am grateful for the gift of having you as my Friend.",
+
+      "Your VoiceNote, our pIctures, Our Memories, They Live forever, Cause you still live especially in my heart and you know Angels don’t die, they just close their eyes to catch a break.",
+
+      "It’s always so hard when I think about you, I still cry a lot when I think of the pain you went through and how you smiled through it. Mommy said you told us not to cry , but trust me to cry. You sef you know how I cried in uni 😂",
+    ],
+    section1: null,
+    section2: null,
+    readTime: "3.5 mins",
+    imageAfterBody: null,
+    finalbody: null,
+    conclusion: [
+      "I just could not bring myself to agree that you’re no more, I tried to record a video but I always just stop. Tried to send some of our memories, but when I remember its because you are no more and not because we want to make you cry or laugh on your birthday. I just pause and refuse to accept this reality. I Remember your smile in that casket, I remember saying sleeping beauty. I promise you I don’t know where that came from either. 😂",
+
+      "But Yes Ogbeni Sleep well.",
     ],
   },
 ];

@@ -56,8 +56,10 @@ export default function NavBarMobile({ colortheme }: INavBarMobile) {
             <Button>
               <X
                 className={cn(
-                  colortheme === "light" ? "text-white" : "text-gray-800"
+                  colortheme === "light" && "text-gray-800",
+                  colortheme === "dark" && "text-gray-800"
                 )}
+                size={25}
               />
             </Button>
           </div>
@@ -86,8 +88,10 @@ export default function NavBarMobile({ colortheme }: INavBarMobile) {
           <Button onClick={toggleDrawer(anchor, true)}>
             <Menu
               className={cn(
-                colortheme === "light" ? "text-white" : "text-gray-800"
+                colortheme === "light" && "text-gray-800",
+                colortheme === "dark" && "text-white"
               )}
+              size={25}
             />
           </Button>
           <Drawer

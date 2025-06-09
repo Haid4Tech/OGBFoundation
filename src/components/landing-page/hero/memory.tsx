@@ -1,6 +1,6 @@
 export default function InMemory() {
   return (
-    <div className="flex flex-col space-y-24 px-12 py-12">
+    <div className="flex flex-col space-y-24 px-5 md:px-12 py-12">
       <div className="flex flex-col gap-4">
         <p className="text-2xl font-bold uppercase text-center">In Memoriam</p>
         <div className={"flex flex-col gap-3 px-0 md:px-24 lg:px-54"}>
