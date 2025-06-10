@@ -1,7 +1,8 @@
 import { INavItems, IiconsList } from "./types";
 import {
-  // FaFacebookF,
   FaInstagram,
+  FaLinkedin ,
+  // FaFacebookF,
   // FaWhatsapp,
   // FaTwitter,
 } from "react-icons/fa";
@@ -135,13 +136,18 @@ export const iconsList: Array<IiconsList> = [
     icon: <FaInstagram size={24} />,
     url: "https://www.instagram.com/omaa_foundation/",
   },
+  {
+    id: 3,
+    icon: <FaLinkedin  size={24} />,
+    url: "https://www.linkedin.com/company/omaa-foundation/",
+  },
   // {
-  //   id: 3,
+  //   id: 4,
   //   icon: <FaWhatsapp size={24} />,
   //   url: "",
   // },
   // {
-  //   id: 4,
+  //   id: 5,
   //   icon: <FaTwitter size={24} />,
   //   url: "",
   // },
