@@ -2,8 +2,8 @@ import { INavItems, IiconsList } from "./types";
 import {
   // FaFacebookF,
   FaInstagram,
-  FaWhatsapp,
-  FaTwitter,
+  // FaWhatsapp,
+  // FaTwitter,
 } from "react-icons/fa";
 import { Grid3x3, Image, ImagePlus, CalendarDays } from "lucide-react";
 import { MediaType, GallerySortOptions } from "./enums";
@@ -127,24 +127,24 @@ export const navItems: Array<INavItems> = [
 export const iconsList: Array<IiconsList> = [
   // {
   //   id: 1,
-  //   icon: <FaFacebookF />,
+  //   icon: <FaFacebookF size={24} />,
   //   url: "",
   // },
   {
     id: 2,
-    icon: <FaInstagram />,
-    url: "",
+    icon: <FaInstagram size={24} />,
+    url: "https://www.instagram.com/omaa_foundation/",
   },
-  {
-    id: 3,
-    icon: <FaWhatsapp />,
-    url: "",
-  },
-  {
-    id: 4,
-    icon: <FaTwitter />,
-    url: "",
-  },
+  // {
+  //   id: 3,
+  //   icon: <FaWhatsapp size={24} />,
+  //   url: "",
+  // },
+  // {
+  //   id: 4,
+  //   icon: <FaTwitter size={24} />,
+  //   url: "",
+  // },
 ];
 
 // EVENTS

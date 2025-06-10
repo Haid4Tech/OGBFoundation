@@ -38,6 +38,7 @@ export default function Footer() {
               <Link
                 className="text-neutral-400 hover:text-black"
                 key={id}
+                target="_blank"
                 to={url}
               >
                 {icon}
