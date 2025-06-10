@@ -1,6 +1,51 @@
-export const stories = [
+import { StoryProp } from "./types";
+
+export const stories: StoryProp[] = [
   {
     id: 1,
+    title: "The Circle I Left Behind",
+    cover: "/story/friends_at_the_site.jpg",
+    tagline: "Even from beyond, I’m still holding you all together.",
+    coverAlt: "friends and family",
+    profile: {
+      cover: "/story/always_n_forever.jpg",
+      alt: "ogb",
+      user: {
+        firstname: "OGB",
+        lastname: "",
+      },
+      email: "",
+    },
+    introduction: [
+      "From where I am now, I can see everything so clearly. I saw you all that day—standing in a circle. Friends. Classmates. Some who had drifted apart, and others who had barely known each other. And yet, you were all there. Together. For me.",
+    ],
+    imageAfterIntro: null,
+    quote: null,
+    body: [
+      "The sky was soft that day, and the air was full of memories. I could hear the quiet laughter, the whispered prayers, and even that familiar joke about the “chairman whip.” You really never got those lyrics right, and I never let you forget it. It still makes me laugh.",
+
+      "But more than the jokes, more than the tears, it was the way you looked at each other that stayed with me. Like you finally saw what I had always seen—how beautifully connected you all are. How even the smallest moments between us could plant roots that grew long after the moment passed.",
+
+      "Up here, I feel light. Not because I’ve left, but because I’ve become part of something greater—something that lives in each of you. I’m not gone. I’m woven into your laughter, your late-night talks, the way you hold space for one another now, without needing a reason.",
+
+      "You stood in a circle, but it wasn’t just about mourning. It was about remembering, and even more, about reuniting. I was always the one pulling people in, wasn’t I? I guess I still am.",
+
+      "That circle—so full of stories, love, and a few badly-sung lyrics—that was my favorite kind of magic. A kind that keeps going, even when I’m no longer the one starting it.",
+    ],
+    section1: null,
+    section2: null,
+    readTime: "2.9 mins",
+    imageAfterBody: null,
+    finalbody: null,
+    conclusion: [
+      "So keep sharing. Keep hugging. Keep singing—even if the words are wrong. I’m watching. I’m smiling. And I’m proud.",
+
+      "Because even from here, I can see it clearly: You're still holding each other. Just like I always hoped you would.",
+    ],
+    created_at: "2025-06-10",
+  },
+  {
+    id: 2,
     title: "Prom Night With MC",
     cover: "/story/nonso_story_cover.jpg",
     tagline:
@@ -39,9 +84,10 @@ export const stories = [
     conclusion: [
       "It was a good night and I had such a nice time and I bet she did too.",
     ],
+    created_at: "2025-06-08",
   },
   {
-    id: 2,
+    id: 3,
     title: "Moments with Ogbenyi",
     cover: "/story/rahma_story_cover.jpg",
     tagline: "It's all about My Girl!!!",
@@ -79,9 +125,10 @@ export const stories = [
       "In all this, I think what really hurts is that we didn't get to have that last group phone call. I wish more than anything that we didn't postpone that call omg. Because that call would have been our last but we never got to have it. It hurts me so much. It hurts me so much that we didn't take that call seriously. I really wish I could go back. And make a different decision in that moment. Because I really regret that we didn't have that last group call.",
       "I really hope that my sweet girl is resting now. I cannot believe I'm typing this, because this was not the plan. It wasn't supposed to be this short. She really deserved all of the world. I really hope that she's resting. Because she really deserves it. She fought so hard, she really deserves to rest. She didn't deserve what she went through. She was such a sweet person, it was a blessing to have her in my life. She really was the best of all of us. She was such an Angel. And I hope that she's found rest. She really deserves it.",
     ],
+    created_at: "2025-06-05",
   },
   {
-    id: 3,
+    id: 4,
     title: "Still Reaching for You",
     cover: "/story/kels_story_cover.jpg",
     tagline:
@@ -116,9 +163,10 @@ export const stories = [
     conclusion: [
       "To be fair, I think about it often, the fact that I don’t have her to do this with anymore. Habitually, I still pick up my phone to send a “guy how far, can we talk about something” or a “have you ever felt like…” text before I remember our reality. I miss her perspective. I miss having that space with her, to be heard without saying a lot, to know how she’s feeling about something before she speaks and vice versa. I miss listening to her try to rationalize both our bad behaviors sometimes, or laughing at something uncouth I did or said. God, I miss laughing with Ogbenyi, she was such a funny babe without even trying, and she laughed at EVERYTHING.",
     ],
+    created_at: "2025-05-24",
   },
   {
-    id: 4,
+    id: 5,
     title: "all love with ogbenyi",
     cover: "/story/praise_story_cover.jpg",
     tagline: "Angels don’t die, they just take a break.",
@@ -158,5 +206,50 @@ export const stories = [
 
       "But Yes Ogbeni Sleep well.",
     ],
+    created_at: "2025-06-07",
+  },
+  {
+    id: 6,
+    title: "In a Chairman Whip: A Tribute to Comfort",
+    cover: "/story/david_cover.png",
+    tagline:
+      "A friendship woven with laughter, late-night study sessions, and unforgettable wrong lyrics.",
+    coverAlt: "Praise and OGB",
+    profile: {
+      cover: "/story/DavidE.jpg",
+      alt: "david",
+      user: {
+        firstname: "Etukly",
+        lastname: "",
+      },
+      email: "",
+    },
+    introduction: [
+      "Mary to me was not just a friend. She was my vocalist, laugh buddy and a constant in my life, a light that made even the most ordinary moments memorable. We met in school, and from that point on, our journey together began.",
+
+      "We studied together, ate together, and did life together in the simplest but most beautiful ways. Whether it was panicking over exams, walking to class half-asleep, or deciding what to eat for lunch for the hundredth time, Comfort was always there. She had this warmth that made people feel seen. With her, even silence felt comforting.",
+    ],
+    imageAfterIntro: null,
+    quote: null,
+    body: [
+      "There’s one memory that still makes me laugh even through the tears. We were studying late in the library—our usual grind. It was quiet, maybe too quiet, so I did what I normally do when things get too serious: I started singing. I was vibing to “EO - German,” but of course, I got the lyrics completely wrong. Instead of “in a German, in a German, in a German whip, in a foreign car,” I was confidently singing, “in a chairman, in a chairman, in a chairman whip, in a foreign car.” I know—it makes absolutely no sense. But that’s what made it funny.",
+
+      "Comfort caught it instantly. She just burst into laughter—the kind of loud, contagious laughter that made everyone around join in even if they didn’t know why. From that moment on, every time that song came on, she’d look at me with that cheeky smile and say, “Chairman whip, really?” And we’d both crack up all over again.",
+
+      "It’s moments like that I hold on to. Her laughter. Her perfect hugs. Her energy that filled a room before she even said a word. Comfort had a way of making you feel like everything was going to be okay, even when it wasn’t.",
+
+      "When she got sick, she faced it the same way she faced everything—with strength, with grace, and with a smile that never quite faded. Losing her feels like losing a part of myself. But I also feel incredibly lucky to have had her in my life. Some people live their whole lives without a Comfort. I got to call her my friend.",
+    ],
+    section1: null,
+    section2: null,
+    readTime: "3.5 mins",
+    imageAfterBody: null,
+    finalbody: null,
+    conclusion: [
+      "I miss her deeply, but I’ll always carry our memories. Every time that ridiculous version of “German” pops into my head, I can still hear her laughing. And somehow, that makes things just a little bit better",
+
+      "Rest well, Comfort. You were truly one of a kind.",
+    ],
+    created_at: "2025-06-10",
   },
 ];

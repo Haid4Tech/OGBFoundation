@@ -4,21 +4,17 @@ import { MoveUpRight } from "lucide-react";
 import ProfileCover from "@/components/reusables/avatar";
 import { useNavigate } from "react-router";
 
-type Profile = {
-  fullName: string;
-  date: Date;
-  profile?: string;
-  email?: string;
-};
+import { ProfileProp } from "@/common/types";
 
 interface ITributeItem {
-  title: string;
-  description: string;
-  profile: Profile;
-  link: string;
+  title?: string;
+  description?: string;
+  profile?: ProfileProp;
+  link?: string;
   cover?: string;
   className?: string;
   sideCover?: boolean;
+  date?: Date | string | null;
 }
 
 export default function TributeItem({
@@ -29,8 +25,9 @@ export default function TributeItem({
   link,
   className,
   sideCover,
+  date,
 }: ITributeItem) {
-  const formatDay = dayjs(profile.date).format("ddd MMMM YYYY");
+  const formatDay = dayjs(date).format("ddd MMMM YYYY");
   const navigate = useNavigate();
   return (
     <div
@@ -43,7 +40,7 @@ export default function TributeItem({
       <div className={cn("")}>
         <img
           className={
-            "object-cover object-center rounded-sm min-w-[300px] md:h-full h-96"
+            "object-cover object-center rounded-sm min-w-[300px] md:h-full h-80"
           }
           src={cover}
           alt="tribute cover"
@@ -52,7 +49,7 @@ export default function TributeItem({
       <div className="flex flex-col md:justify-between gap-4 h-full">
         <div className="flex flex-col gap-3">
           <div
-            onClick={() => navigate(link)}
+            onClick={() => navigate(link ?? "")}
             className={cn(
               "flex flex-row items-center justify-between cursor-pointer hover:underline"
             )}
@@ -85,16 +82,18 @@ export default function TributeItem({
         >
           <div className="flex flex-row gap-2 my-auto">
             <ProfileCover
-              img={profile.profile}
+              img={profile?.cover}
               user={{
-                firstname: profile.fullName.split(" ")[0],
-                lastname: profile.fullName.split(" ").slice(1).join(" "),
+                firstname: profile?.user?.firstname,
+                lastname: profile?.user?.lastname,
               }}
-              alt={`${profile.fullName} cover image`}
+              alt={`${profile?.alt} cover image`}
             />
             <div>
-              <p className="text-sm font-semibold">{profile.fullName}</p>
-              <p className="text-xs font-thin">{profile.email}</p>
+              <p className="text-sm font-semibold">
+                {profile?.user?.firstname} {profile?.user?.lastname}
+              </p>
+              <p className="text-xs font-thin">{profile?.email}</p>
             </div>
           </div>
           <p className="text-xs font-thin">{formatDay}</p>

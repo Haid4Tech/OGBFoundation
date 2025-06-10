@@ -2,16 +2,16 @@ import dayjs from "dayjs";
 import { Link } from "react-router";
 
 interface IStoriesCard {
-  title: string;
-  date_added: Date | string;
-  description: string;
   link: string;
+  title?: string;
+  date_added?: Date | string | null;
+  description?: string;
 }
 
 export default function StoriesCard(storyItems: IStoriesCard) {
-  const formatDate = dayjs(new Date(storyItems.date_added)).format(
-    "DD MMMM, YYYY"
-  );
+  const formatDate = storyItems.date_added
+    ? dayjs(new Date(storyItems.date_added)).format("DD MMMM, YYYY")
+    : "";
   return (
     <div className={"flex flex-col gap-4"}>
       <div className={"flex flex-col gap-2"}>
@@ -26,7 +26,7 @@ export default function StoriesCard(storyItems: IStoriesCard) {
           className={
             "w-fit text-sm font-bold hover:underline text-primary-dark"
           }
-          to={""}
+          to={storyItems.link}
         >
           Read More
         </Link>

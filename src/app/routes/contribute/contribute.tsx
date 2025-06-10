@@ -1,6 +1,8 @@
 import Navbar from "@/components/navigation/menubar";
 import Footer from "@/components/navigation/footer";
 import FoundationImg from "@/assets/images/foundation/OMAAfoundation_cropped.jpg";
+// import DonationForm from "@/components/contribute/donation-form";
+import ComingSoon from "@/components/reusables/coming-soon";
 
 export default function ContributeScreen() {
   return (
@@ -25,7 +27,7 @@ export default function ContributeScreen() {
           className="w-full h-[450px] object-top object-cover shadow-md"
         />
 
-        <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div className="max-w-7xl mx-auto px-4 py-12 grid grid-row-2 gap-8 items-start">
           <div>
             <h2 className="text-2xl font-semibold mt-6 text-gray-800">
               Make a Difference Today
@@ -56,45 +58,8 @@ export default function ContributeScreen() {
           </div>
 
           {/* Right Side: Donation Form */}
-          <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto">
-            <h3 className="text-lg font-semibold mb-4">Enter Amount</h3>
-            <div className="flex gap-2 mb-4">
-              <button className="px-3 py-1 border border-gray-300 rounded-md text-sm font-medium">
-                One-time
-              </button>
-              <button className="px-3 py-1 border border-gray-300 rounded-md text-sm font-medium">
-                Monthly
-              </button>
-            </div>
-            <form className="flex flex-col gap-4">
-              <input
-                type="text"
-                placeholder="First Name"
-                className="border border-gray-300 rounded-md px-3 py-2 text-sm"
-              />
-              <input
-                type="email"
-                placeholder="Email"
-                className="border border-gray-300 rounded-md px-3 py-2 text-sm"
-              />
-              <div className="relative">
-                <input
-                  type="number"
-                  placeholder="Amount"
-                  className="border border-gray-300 rounded-md px-3 py-2 text-sm w-full"
-                />
-                <span className="absolute right-3 top-2 text-sm text-gray-500">
-                  USD
-                </span>
-              </div>
-              <button
-                type="submit"
-                className="bg-blue-600 text-white py-2 rounded-md text-sm font-medium hover:bg-blue-700"
-              >
-                Continue
-              </button>
-            </form>
-          </div>
+          {/* <DonationForm /> */}
+          <ComingSoon />
         </div>
       </div>
       <Footer />

@@ -5,7 +5,7 @@ import {
   FaWhatsapp,
   FaTwitter,
 } from "react-icons/fa";
-import { Grid3x3, Image, ImagePlus, CalendarDays, Video } from "lucide-react";
+import { Grid3x3, Image, ImagePlus, CalendarDays } from "lucide-react";
 import { MediaType, GallerySortOptions } from "./enums";
 
 import OGBBorn from "../assets/images/2000/ogb born.png";
@@ -178,12 +178,12 @@ export const galleryFilterOptions = [
       label: MediaType.PHOTOS,
     },
   },
-  {
-    items: {
-      icon: <Video size={16} />,
-      label: MediaType.VIDEOS,
-    },
-  },
+  // {
+  //   items: {
+  //     icon: <Video size={16} />,
+  //     label: MediaType.VIDEOS,
+  //   },
+  // },
 ];
 
 export const ImageList = [

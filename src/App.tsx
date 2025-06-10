@@ -1,10 +1,16 @@
-import LandingPage from "./app/routes/home";
+import { lazy } from "react";
+import ScrollToTop from "@/util/scroll-to-top";
+
+const HomeScreen = lazy(() => import("./app/routes/home"));
 
 function App() {
   return (
-    <div className="font-lato">
-      <LandingPage />
-    </div>
+    <>
+      <ScrollToTop />
+      <div className="font-lato">
+        <HomeScreen />
+      </div>
+    </>
   );
 }
 

@@ -34,7 +34,7 @@ export interface ImageMasonryProp {
   gallery: Array<ImageProp>;
 }
 
-interface ImageDataProp {
+export interface ImageDataProp {
   image?: string | undefined;
   alt?: string;
   profile?: {
@@ -51,19 +51,19 @@ interface ImageDataProp {
   link?: string;
 }
 
-interface ISections {
+export interface ISections {
   topic?: string;
   body?: string[];
   list?: string[];
 }
 
-interface QuoteProp {
+export interface QuoteProp {
   text: string;
   source: string;
   name: string;
 }
 
-interface ProfileProp {
+export interface ProfileProp {
   cover?: string | undefined;
   alt?: string;
   email?: string;
@@ -75,13 +75,13 @@ interface ProfileProp {
 
 export interface StoryProp {
   id: number;
-  title: string;
-  cover: string;
+  title?: string;
+  cover?: string;
   tagline?: string;
   coverAlt?: string;
-  readTime: string;
+  readTime?: string;
   profile?: ProfileProp;
-  introduction?: string[];
+  introduction: string[];
   imageAfterIntro?: ImageDataProp | null;
   quote?: QuoteProp | null;
   body: string[];
@@ -90,4 +90,5 @@ export interface StoryProp {
   imageAfterBody?: ImageDataProp | null;
   finalbody?: string[] | null;
   conclusion: string[];
+  created_at?: Date | string | null;
 }

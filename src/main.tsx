@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import Layout from "./layout.tsx";
 import EventScreen from "./app/routes/events/events.tsx";
 import StoriesScreen from "./app/routes/stories/stories.tsx";
 import DynamicStory from "./app/routes/stories/stories.id.tsx";
@@ -9,36 +10,42 @@ import ContributeScreen from "./app/routes/contribute/contribute.tsx";
 import App from "./App.tsx";
 import "./index.css";
 
-import { createBrowserRouter, RouterProvider } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const routes = [
   {
     path: "/",
-    Component: App,
-  },
-  {
-    path: "/events",
-    Component: EventScreen,
-  },
-  {
-    path: "/gallery",
-    Component: GalleryScreen,
-  },
-  {
-    path: "/stories",
-    Component: StoriesScreen,
-  },
-  {
-    path: "/stories/:storiesId",
-    Component: DynamicStory,
-  },
-  {
-    path: "/timeline",
-    Component: TimelineScreen,
-  },
-  {
-    path: "/contribute",
-    Component: ContributeScreen,
+    element: <Layout />, // Wrap all with layout
+    children: [
+      {
+        index: true,
+        element: <App />,
+      },
+      {
+        path: "events",
+        element: <EventScreen />,
+      },
+      {
+        path: "gallery",
+        element: <GalleryScreen />,
+      },
+      {
+        path: "stories",
+        element: <StoriesScreen />,
+      },
+      {
+        path: "stories/:storiesId",
+        element: <DynamicStory />,
+      },
+      {
+        path: "timeline",
+        element: <TimelineScreen />,
+      },
+      {
+        path: "contribute",
+        element: <ContributeScreen />,
+      },
+    ],
   },
 ];
 

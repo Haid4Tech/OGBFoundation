@@ -21,10 +21,10 @@ const toggleOptions = [
     label: "Years",
     item: ToggleImages.YEARS,
   },
-  {
-    label: "Months",
-    item: ToggleImages.MONTHS,
-  },
+  // {
+  //   label: "Months",
+  //   item: ToggleImages.MONTHS,
+  // },
   {
     label: "Recently Added",
     item: ToggleImages.RECENTLYADDED,

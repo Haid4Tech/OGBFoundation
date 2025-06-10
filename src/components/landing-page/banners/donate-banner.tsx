@@ -1,7 +1,9 @@
 import BannerImg from "@/assets/landing/donate-bg.png";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router";
 
 export default function DonateBanner() {
+  const navigate = useNavigate();
   return (
     <div className="relative min-h-[30rem] w-full overflow-hidden">
       <div
@@ -21,7 +23,11 @@ export default function DonateBanner() {
               who need it the most and to spread the warmth and love that we
               once shared with Ogbenyi.
             </p>
-            <Button className={"w-fit"} type="submit">
+            <Button
+              onClick={() => navigate("/contribute")}
+              className={"w-fit"}
+              type="submit"
+            >
               Donate Now
             </Button>
           </div>
