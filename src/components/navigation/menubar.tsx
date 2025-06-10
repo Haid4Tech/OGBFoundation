@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import { cn } from "@/lib/utils";
 import Icon from "../../assets/OG_logo.png";
 import NavBarMobile from "./mobile-nav";
+import { useLocation } from "react-router";
 
 interface INavBar {
   colortheme: "light" | "dark";
@@ -44,10 +45,13 @@ export const NavLink = ({
   colortheme: "light" | "dark";
   children: React.ReactNode;
 }) => {
+  const { pathname } = useLocation();
+
   return (
     <Link
       to={href}
       className={cn(
+        pathname === href && colortheme === "light" && "border-b border-black",
         "transition-colors uppercase font-medium text-sm tracking-widest text-center px-2 pb-2",
         colortheme === "light" && "text-black hover:text-gray-300",
         colortheme === "dark" &&

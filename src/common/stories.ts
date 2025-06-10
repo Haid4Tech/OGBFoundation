@@ -1,14 +1,27 @@
 import { StoryProp } from "./types";
 
+import ComfortProfile from "@/assets/story/always_n_forever.jpg";
+import ComfortCover from "@/assets/story/friends_at_the_site.jpg";
+import NonsoProfile from "@/assets/story/nonso_profile.jpg";
+import NonsoCover from "@/assets/story/nonso_story_cover.jpg";
+import RahmaProfile from "@/assets/story/rahma_profile.jpg";
+import RahmaCover from "@/assets/story/rahma_story_cover.jpg";
+import KelsProfile from "@/assets/story/kels_profile.jpg";
+import KelsCover from "@/assets/story/kels_story_cover.jpg";
+import PraiseProfile from "@/assets/story/praise_comfort.jpg";
+import PraiseCover from "@/assets/story/praise_story_cover.jpg";
+import DavidProfile from "@/assets/story/DavidE.jpg";
+import DavidCover from "@/assets/story/david_story_cover.png";
+
 export const stories: StoryProp[] = [
   {
     id: 1,
     title: "The Circle I Left Behind",
-    cover: "/story/friends_at_the_site.jpg",
+    cover: ComfortCover,
     tagline: "Even from beyond, I’m still holding you all together.",
     coverAlt: "friends and family",
     profile: {
-      cover: "/story/always_n_forever.jpg",
+      cover: ComfortProfile,
       alt: "ogb",
       user: {
         firstname: "OGB",
@@ -47,12 +60,12 @@ export const stories: StoryProp[] = [
   {
     id: 2,
     title: "Prom Night With MC",
-    cover: "/story/nonso_story_cover.jpg",
+    cover: NonsoCover,
     tagline:
       "I told myself “As long as this babe keeps holding my hand throughout this night, I’m going to have a good time",
     coverAlt: "Nonso and OGB Prom night",
     profile: {
-      cover: "/story/nonso_profile.jpg",
+      cover: NonsoProfile,
       alt: "nonso",
       user: {
         firstname: "Chinonso",
@@ -89,11 +102,11 @@ export const stories: StoryProp[] = [
   {
     id: 3,
     title: "Moments with Ogbenyi",
-    cover: "/story/rahma_story_cover.jpg",
+    cover: RahmaCover,
     tagline: "It's all about My Girl!!!",
     coverAlt: "Nonso and OGB Prom night",
     profile: {
-      cover: "/story/rahma_profile.jpg",
+      cover: RahmaProfile,
       alt: "Rahma",
       user: {
         firstname: "Rahma",
@@ -130,12 +143,12 @@ export const stories: StoryProp[] = [
   {
     id: 4,
     title: "Still Reaching for You",
-    cover: "/story/kels_story_cover.jpg",
+    cover: KelsCover,
     tagline:
       "For every quiet prayer, unspoken word, and shared laugh — I still carry you.",
     coverAlt: "Kels and OGB",
     profile: {
-      cover: "/story/kels_profile.jpg",
+      cover: KelsProfile,
       alt: "Kels",
       user: {
         firstname: "Kelechi",
@@ -168,11 +181,11 @@ export const stories: StoryProp[] = [
   {
     id: 5,
     title: "all love with ogbenyi",
-    cover: "/story/praise_story_cover.jpg",
+    cover: PraiseCover,
     tagline: "Angels don’t die, they just take a break.",
     coverAlt: "Praise and OGB",
     profile: {
-      cover: "/story/praise_comfort.jpg",
+      cover: PraiseProfile,
       alt: "Kels",
       user: {
         firstname: "Praise",
@@ -211,12 +224,12 @@ export const stories: StoryProp[] = [
   {
     id: 6,
     title: "In a Chairman Whip: A Tribute to Comfort",
-    cover: "/story/david_cover.png",
+    cover: DavidCover,
     tagline:
       "A friendship woven with laughter, late-night study sessions, and unforgettable wrong lyrics.",
     coverAlt: "Praise and OGB",
     profile: {
-      cover: "/story/DavidE.jpg",
+      cover: DavidProfile,
       alt: "david",
       user: {
         firstname: "Etukly",
